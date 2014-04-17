@@ -10,12 +10,12 @@ Feature: Checkout process
 
   Scenario: Name is required when checking out
     When I attempt to checkout without a name
-    Then I should see the error message "Name can't be blank."
+    Then I should see the error message "Name can't be blank"
 
   # We need the address so we can deliver the puppy
   Scenario: Address is required when checking out
     When I attempt to checkout without an address
-    Then I should see the error message "Address can't be blank."
+    Then I should see the error message "Address can't be blank"
 
   Scenario: Adopter should be prompted with valid payment options
     When I am checking out
