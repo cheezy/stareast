@@ -1,8 +1,8 @@
 Feature: Checkout process
 
-  After the adopter has selected the puppy to adopt and
-  any additional products they are required to enter
-  some information that is necessary to complete the
+  After the adopter has selected the puppy of their dreams
+  and any additional products they are required to enter
+  additional information that is necessary to complete the
   adoption.
 
   Background:

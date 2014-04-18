@@ -2,7 +2,7 @@ Given(/^I want to adopt puppies$/) do
   pending
 end
 
-When(/^I attempt to checkout without a|an (.+)$/) do |field|
+When(/^I attempt to checkout without (?:a|an) (.+)$/) do |field|
   pending
 end
 
