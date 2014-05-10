@@ -1,28 +1,29 @@
 Given(/^I want to adopt puppies$/) do
-  pending
+  visit HomePage
 end
 
 When(/^I attempt to checkout without (?:a|an) (.+)$/) do |field|
-  pending
+  navigate_to(CheckoutPage).checkout(field => '')
 end
 
 Then(/^I should see the error message "([^"]*)"$/) do |error|
-  pending
+  @current_page.text.should include error
 end
 
 When(/^I am checking out$/) do
-  pending
+  navigate_to(CheckoutPage)
 end
 
 Then(/^I should be prompted with the following payment options:$/) do |table|
-  # table is a table.hashes.keys # => [:option]
-  pending
+  table.hashes.first do |hsh|
+    on(CheckoutPage).payment_options.should include hsh['option']
+  end
 end
 
 When(/^I complete the adoption of a puppy$/) do
-  pending
+  navigate_all
 end
 
 Then(/^I should see the message "([^"]*)"$/) do |message|
-  pending
+  @current_page.text.should include message
 end
